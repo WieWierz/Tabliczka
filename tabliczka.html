@@ -1,0 +1,32 @@
+<html>
+<head>
+</head>
+<body onload="stworz()">
+	
+	<table id="tab" border="1">
+		<tr>
+			<td>wynik</td>
+			<td>imie</td>
+		</tr>
+	</table>
+	<script>
+  	function stworz()
+	{
+		var tabela = document.getElementById("tab");
+				
+		for(i=0;i<=9;i++)
+		{
+			var row = tabela.insertRow(i);
+			
+			var kom1 = row.insertCell(0);
+			var kom2 = row.insertCell(1);
+			
+			var wynik= 15*i;
+			
+			kom1.innerHTML=wynik;
+			kom2.innerHTML="Kamil";
+		}
+	}
+	</script>
+</body>
+</html>
